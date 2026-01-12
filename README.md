@@ -24,10 +24,11 @@ sudo apt install apache2 php mariadb-server php-mysql git -y
 ```
 sudo chown -R pi:www-data /var/www/html/
 ```
-Edit visudo
+Open /etc/sudoers:
 ```
 sudo visudo
 ```
+Add this at the bottom:
 ```
 www-data ALL=NOPASSWD: ALL
 ```
