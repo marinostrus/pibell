@@ -53,15 +53,19 @@ This gives unrestricted access to your entire pi without ever asking for a passw
 www-data ALL=NOPASSWD: ALL
 ```
 ## Database
+Login to mysql:
 ```
 sudo mysql -u root -p
 ```
+Create the database you are going to use:
 ```
 CREATE DATABASE schoolbell;
 ```
+Select the database you just created:
 ```
 USE schoolbell;
 ```
+Create the table for the schedule:
 ```
 CREATE TABLE `schedule` (
   `idschedule` varchar(45) NOT NULL,
@@ -74,6 +78,7 @@ CREATE TABLE `schedule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ```
+And one for the songs:
 ```
 CREATE TABLE `songs` (
   `idsongs` varchar(45) NOT NULL,
@@ -82,12 +87,15 @@ CREATE TABLE `songs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ```
+Create a database user. Make sure you change the password!
 ```
 CREATE USER 'schoolbell'@'localhost' IDENTIFIED BY 'password';
 ```
+Give the user you just created full control over the database:
 ```
 GRANT ALL PRIVILEGES ON schoolbell.* TO 'schoolbell'@'localhost';
 ```
+Refresh user permissions:
 ```
 FLUSH PRIVILEGES;
 ```
