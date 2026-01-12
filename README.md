@@ -4,7 +4,7 @@ Pibell is a music school bell for raspberry pi.
 
 <img width="1903" height="620" alt="image" src="https://github.com/user-attachments/assets/5a056814-bb1a-45ee-83de-914e4686fa19" />
 
-It basicly just sets up cronjobs to play a random or specific mp3 on a specific time.
+It just sets up cronjobs to play a random or specific mp3 on a specific time.
 
 <img width="718" height="351" alt="image" src="https://github.com/user-attachments/assets/b8d3df95-a544-43e8-838b-5b457a0edcda" />
 
