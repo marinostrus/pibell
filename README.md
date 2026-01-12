@@ -8,6 +8,16 @@ It just sets up cronjobs to play a random or specific mp3 on a specific time.
 
 <img width="718" height="351" alt="image" src="https://github.com/user-attachments/assets/b8d3df95-a544-43e8-838b-5b457a0edcda" />
 
+# Screenshots
+
+<img width="1643" height="421" alt="image" src="https://github.com/user-attachments/assets/72d8a7d6-9638-43bb-9a0c-2abe0565fdfb" />
+
+<img width="1795" height="905" alt="image" src="https://github.com/user-attachments/assets/b44a39f6-7504-4001-89c8-a44a6044585c" />
+
+<img width="667" height="320" alt="image" src="https://github.com/user-attachments/assets/945f94be-8b0e-4dcf-8151-870c38f1b3d4" />
+
+<img width="709" height="337" alt="image" src="https://github.com/user-attachments/assets/b1ad7122-ae08-480d-8ebb-82c705e40af6" />
+
 
 # Installation
 
