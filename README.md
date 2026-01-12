@@ -11,13 +11,13 @@ It just sets up cronjobs to play a random or specific mp3 on a specific time.
 I currently have 4 schools here running this for their school bell. The first one is still up and running after more then 5 years. If you have a school with already a sound system, this can be a cheap and easy replacement for those way to pricey music school bells they sell :).
 
 # Screenshots
-
+## Settings - School bell
 <img width="1643" height="421" alt="image" src="https://github.com/user-attachments/assets/72d8a7d6-9638-43bb-9a0c-2abe0565fdfb" />
-
+## Settings - System
 <img width="1795" height="905" alt="image" src="https://github.com/user-attachments/assets/b44a39f6-7504-4001-89c8-a44a6044585c" />
-
+## Music - Add song
 <img width="667" height="320" alt="image" src="https://github.com/user-attachments/assets/945f94be-8b0e-4dcf-8151-870c38f1b3d4" />
-
+## Music - Collection
 > [!TIP]
 > Adding Bob Marley songs to your school bell drastically improves performance and also kids love Bob Marley :)
 
