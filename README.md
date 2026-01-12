@@ -129,9 +129,3 @@ In your "php.ini" file, search for the file_uploads directive, and set it to On:
 - post_max_size = 21M
 
 Reboot after this!
-
-# Manual
-## Uploading a song
-
-## Set a school bell signal
-
