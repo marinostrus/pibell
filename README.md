@@ -20,3 +20,65 @@ Install the necesarry software:
 ```
 sudo apt install apache2 php mariadb-server php-mysql git -y
 ```
+
+```
+sudo chown -R pi:www-data /var/www/html/
+```
+Edit visudo
+```
+sudo visudo
+```
+```
+www-data ALL=NOPASSWD: ALL
+```
+## Database
+```
+sudo mysql -u root -p
+```
+```
+CREATE DATABASE schoolbell;
+```
+```
+USE schoolbell;
+```
+```
+CREATE TABLE `schedule` (
+  `idschedule` varchar(45) NOT NULL,
+  `Day` int(11) DEFAULT NULL,
+  `Hour` int(11) DEFAULT NULL,
+  `Minutes` int(11) DEFAULT NULL,
+  `song` varchar(45) DEFAULT NULL,
+  `playtime` int(11) NOT NULL,
+  PRIMARY KEY (`idschedule`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+```
+```
+CREATE TABLE `songs` (
+  `idsongs` varchar(45) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idsongs`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+```
+```
+CREATE USER 'schoolbell'@'localhost' IDENTIFIED BY 'password';
+```
+```
+GRANT ALL PRIVILEGES ON schoolbell.* TO 'schoolbell'@'localhost';
+```
+```
+FLUSH PRIVILEGES;
+```
+## Clone files
+
+blabla
+
+## Adjust php.ini for file upload
+
+In your "php.ini" file, search for the file_uploads directive, and set it to On:
+
+- upload_max_filesize = 20M
+- post_max_size = 21M
+
+Reboot after this!
