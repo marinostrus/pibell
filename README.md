@@ -20,7 +20,7 @@ Install the necesarry software:
 ```
 sudo apt install apache2 php mariadb-server php-mysql git -y
 ```
-
+Change ownership of webserver files:
 ```
 sudo chown -R pi:www-data /var/www/html/
 ```
