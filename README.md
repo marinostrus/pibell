@@ -80,6 +80,14 @@ blabla
 
 ## Adjust php.ini for file upload
 
+If you don't know where your php.ini is located:
+
+<img width="228" height="476" alt="image" src="https://github.com/user-attachments/assets/3d980510-bda3-4e5d-a2f9-4df44ef57088" />
+
+Check the path at this entry:
+
+<img width="366" height="169" alt="image" src="https://github.com/user-attachments/assets/7721295b-d4af-491c-8912-898728211655" />
+
 In your "php.ini" file, search for the file_uploads directive, and set it to On:
 
 - upload_max_filesize = 20M
