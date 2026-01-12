@@ -31,7 +31,7 @@ Open /etc/sudoers:
 ```
 sudo visudo
 ```
-Add this at the bottom:
+This gives unrestricted access to your entire pi without ever asking for a password.
 ```
 www-data ALL=NOPASSWD: ALL
 ```
