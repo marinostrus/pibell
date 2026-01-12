@@ -18,6 +18,9 @@ I currently have 4 schools here running this for their school bell. The first on
 
 <img width="667" height="320" alt="image" src="https://github.com/user-attachments/assets/945f94be-8b0e-4dcf-8151-870c38f1b3d4" />
 
+> [!TIP]
+> Adding Bob Marley songs to your school bell drastically improves performance and also kids love Bob Marley!
+
 <img width="709" height="337" alt="image" src="https://github.com/user-attachments/assets/b1ad7122-ae08-480d-8ebb-82c705e40af6" />
 
 
