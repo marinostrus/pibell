@@ -12,6 +12,8 @@ I currently have 4 schools here running this for their school bell. The first on
 
 I use raspberry pis in all of them, but an old computer with a Linux server would do just as well (and the steps will be the same).
 
+A Pi 4 or 5 is the best for this. A Pi 3 is a bit slower when you have to adjust or create alerts (because I generate every time the entire crontab when you change something). But once it's up and running, you don't notice any difference between them.
+
 # Screenshots
 ## Settings -> School bell
 
