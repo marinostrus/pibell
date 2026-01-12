@@ -10,6 +10,8 @@ It just sets up cronjobs to play a random or specific mp3 on a chosen time.
 
 I currently have 4 schools here running this for their school bell. The first one is still up and running after more then 5 years. If you have a school with already a sound system, this can be a cheap and easy replacement for those way to pricey music school bells they sell :).
 
+I use raspberry pis in all of them, but an old computer with a Linux server would do just as well (and the steps will be the same).
+
 # Screenshots
 ## Settings -> School bell
 
