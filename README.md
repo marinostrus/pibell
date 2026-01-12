@@ -2,13 +2,13 @@
 
 Pibell is an open source music school bell for raspberry pi. 
 
-I currently have 4 schools here running this for their school bell. The first one is still up and running after more then 5 years. If you have a school with already a sound system, this can be a cheap and easy replacement for those way to pricey music school bells they sell :).
-
 <img width="1903" height="620" alt="image" src="https://github.com/user-attachments/assets/5a056814-bb1a-45ee-83de-914e4686fa19" />
 
 It just sets up cronjobs to play a random or specific mp3 on a specific time.
 
 <img width="718" height="351" alt="image" src="https://github.com/user-attachments/assets/b8d3df95-a544-43e8-838b-5b457a0edcda" />
+
+I currently have 4 schools here running this for their school bell. The first one is still up and running after more then 5 years. If you have a school with already a sound system, this can be a cheap and easy replacement for those way to pricey music school bells they sell :).
 
 # Screenshots
 
