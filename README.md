@@ -111,7 +111,9 @@ FLUSH PRIVILEGES;
 ```
 ## Clone files
 
-blabla
+```
+git clone https://github.com/marinostrus/pibell.git
+```
 
 ## Adjust php.ini for file upload
 
