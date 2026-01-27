@@ -40,6 +40,15 @@ include "connection.php";
                   <tr>
                     <td><?php echo $lang_day;?></td>
                     <td>
+						<input type="checkbox" id="monday" name="monday" value="1" checked><label for="monday">&nbsp;<?php echo $lang_monday;?></label><br>		
+						<input type="checkbox" id="tuesday" name="tuesday" value="2" checked><label for="tuesday">&nbsp;<?php echo $lang_tuesday;?></label><br>	
+						<input type="checkbox" id="wednesday" name="wednesday" value="3" checked><label for="wednesday">&nbsp;<?php echo $lang_wednesday;?></label><br>
+						<input type="checkbox" id="thursday" name="thursday" value="4" checked><label for="thursday">&nbsp;<?php echo $lang_thursday;?></label><br>
+						<input type="checkbox" id="friday" name="friday" value="5" checked><label for="friday">&nbsp;<?php echo $lang_friday;?></label><br>
+						<?php /*	<input type="checkbox" id="saturday" name="saturday" value="6" ><label for="saturday">&nbsp;<?php echo $lang_saturday;?></label><br>*/ ?>	
+						<?php /*	<input type="checkbox" id="sunday" name="sunday" value="7"><label for="sunday">&nbsp;<?php echo $lang_sunday;?></label>*/ ?>	
+
+<?php /*						
 						 <select name="day" id="day">
 						  <option value="1"><?php echo $lang_monday;?></option>
 						  <option value="2"><?php echo $lang_tuesday;?></option>
@@ -48,7 +57,8 @@ include "connection.php";
 						  <option value="5"><?php echo $lang_friday;?></option>
 						  <option value="6"><?php echo $lang_saturday;?></option>
 						  <option value="7"><?php echo $lang_sunday;?></option>
-						</select> 					
+						</select> 	
+*/ ?>						
 					</td>
                   </tr>
                   <tr>
