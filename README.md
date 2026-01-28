@@ -14,6 +14,13 @@ I use raspberry pis in all of them, but an old computer with a Linux server woul
 
 A Pi 4 or 5 is the best for this. A Pi 3 is slower when you have to adjust or create alerts (because I generate every time the entire crontab when you change something). But besides that, you don't really notice any difference between them in speed. The Pi 4 and 5 should do all changes to the schedule instantly.
 
+## Languages
+
+Currently available in 2 languages:
+
+- English
+- Dutch 
+
 # Screenshots
 ## Settings -> School bell
 
