@@ -6,7 +6,7 @@
     <div class="sidebar-brand-icon rotate-n-15">
       <i class="fas fa-laugh-wink"></i>
     </div>
-    <div class="sidebar-brand-text mx-3"><?php echo $lang_schoolbell; ?><sup>0.3</sup>
+    <div class="sidebar-brand-text mx-3"><?php echo $lang_schoolbell; ?><sup>0.4</sup>
 	<span style="color:white;"><div id="clock"></div></span>
 	</div>
   </a>

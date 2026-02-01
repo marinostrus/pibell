@@ -34,7 +34,11 @@
                   <tr>
                     <td><?php echo $lang_name;?></td>
                     <td><input type="text" name="song" id="song"/></td>
-                  </tr>				  
+                  </tr>	
+                  <tr>
+					<td></td>
+                    <td><input type="checkbox" id="random" name="random" value="1"><label for="monday">&nbsp;Nummer nooit willekeurig afspelen</label><br>		</td>
+                  </tr>					  
                 </tbody>
               </table>
 			  <p><input type="submit" value="<?php echo $lang_upload;?>" name="submit"></p>

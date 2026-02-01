@@ -3,7 +3,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Scholengroep Antwerpen</span>
+            <span><a href="https://github.com/marinostrus/pibell"><img src='img/GitHub_Lockup_Black_Clearspace.png' width="100px"/></a></span>
           </div>
         </div>
       </footer>

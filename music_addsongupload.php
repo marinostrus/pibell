@@ -35,7 +35,18 @@ $redirect = "music_collection.php";
 $target_dir = "/var/www/html/music/";
 $song = $_POST["song"];
 $song = RemoveSpecialChar($song);
+
+$path = 1;
+$random = $_POST["random"];
+if($random==1){
+	$target_dir = "/var/www/html/music/no-random/";
+	$path = 0;
+}
+
+
+
 $target_file = $target_dir . $id . ".mp3";
+
 
 /*
 echo $song."<br/>";
@@ -49,7 +60,7 @@ echo $target_dir."<br/>";
 move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 
 // INSERT NAME & ID DB
-$sql = "INSERT INTO songs (idsongs, name) VALUES ('$id', '$song')";
+$sql = "INSERT INTO songs (idsongs, name, random) VALUES ('$id', '$song', $path)";
 if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);

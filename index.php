@@ -206,11 +206,11 @@
               </div>
             </div>
 
-<?php /* ?>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
+<?php  ?>
+             <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
-                  <h3><?php echo $lang_saturday;?></h3>
+                    <h3><?php echo $lang_saturday;?></h3>
 					<?php
 					$sqlzaterdag = "SELECT * FROM schedule WHERE Day = 6 ORDER BY Hour, Minutes";
 					$resultzaterdag = mysqli_query($conn, $sqlzaterdag);
@@ -231,18 +231,22 @@
 								while($rowsongzaterdag = mysqli_fetch_assoc($resultsongzaterdag)) {
 									$namezaterdag = $rowsongzaterdag["name"];
 							}}							
+							
+							// RANDOM SONG
+							if($idsongzaterdag=="*"){$namezaterdag=$lang_randomsong;}							
+							
 							echo $hourzerozaterdag.$rowzaterdag["Hour"].":".$minuteszerozaterdag.$rowzaterdag["Minutes"]." - <a href='schedule_edit.php?id=$idschedulezaterdag'>".$namezaterdag."</a><br/>";		
 						}
 					} else {
 						echo $lang_nosongsadded;
 					}
-					?>					  
+					?>					
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
+              <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <h3><?php echo $lang_sunday;?></h3>
 					<?php
@@ -253,7 +257,7 @@
 						// output data of each row
 						while($rowzondag = mysqli_fetch_assoc($resultzondag)) {
 							$idsongzondag = $rowzondag["song"];
-							$idschedulezondag = $rowzondag["idschedule"];							
+							$idschedulezondag = $rowzondag["idschedule"]; 
 							if($rowzondag["Hour"]<10){$hourzerozondag=0;}else{$hourzerozondag="";}
 							if($rowzondag["Minutes"]<10){$minuteszerozondag=0;}else{$minuteszerozondag="";}
 							
@@ -265,16 +269,20 @@
 								while($rowsongzondag = mysqli_fetch_assoc($resultsongzondag)) {
 									$namezondag = $rowsongzondag["name"];
 							}}							
+							
+							// RANDOM SONG
+							if($idsongzondag=="*"){$namezondag=$lang_randomsong;}							
+							
 							echo $hourzerozondag.$rowzondag["Hour"].":".$minuteszerozondag.$rowzondag["Minutes"]." - <a href='schedule_edit.php?id=$idschedulezondag'>".$namezondag."</a><br/>";		
 						}
 					} else {
 						echo $lang_nosongsadded;
 					}
-					?>			  
+					?>					
                 </div>
               </div>
             </div>
-<?php */ ?>			
+<?php  ?>			
 
           </div>
         </div>
