@@ -1,6 +1,6 @@
 # Pibell
 
-Pibell is a music school bell for raspberry pi. 
+Pibell is an open source music school bell for raspberry pi. 
 
 <img width="1903" height="620" alt="image" src="https://github.com/user-attachments/assets/5a056814-bb1a-45ee-83de-914e4686fa19" />
 
@@ -13,13 +13,6 @@ I currently have 4 schools here running this for their school bell. The first on
 I use raspberry pis in all of them, but an old computer with a Linux server would do just as well (and the steps will be the same).
 
 A Pi 4 or 5 is the best for this. A Pi 3 is slower when you have to adjust or create alerts (because I generate every time the entire crontab when you change something). But besides that, you don't really notice any difference between them in speed. The Pi 4 and 5 should do all changes to the schedule instantly.
-
-## Languages
-
-Currently available in 2 languages:
-
-- English
-- Dutch 
 
 # Screenshots
 ## Settings -> School bell
@@ -104,7 +97,6 @@ And one for the songs:
 CREATE TABLE `songs` (
   `idsongs` varchar(45) NOT NULL,
   `name` varchar(45) DEFAULT NULL,
-  `random` int(11) DEFAULT NULL,
   PRIMARY KEY (`idsongs`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
