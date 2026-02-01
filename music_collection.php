@@ -136,7 +136,7 @@ if(isset($error)){
                 <tbody>				
                   <tr>
                     <td><?php echo $row["name"];?></td>
-					<?php  ?><td><center><a href="music_playsong.php?id=<?php echo $row["idsongs"];?>&path=1"><img src="img/play.jpg" width="30px"/></a></center></td><?php  ?>
+					<?php  ?><td><center><a href="music_playsong_random.php?id=<?php echo $row["idsongs"];?>&path=1"><img src="img/play.jpg" width="30px"/></a></center></td><?php  ?>
                     <td><center><a href="music_editsong.php?id=<?php echo $row["idsongs"];?>"><img src="img/edit.png" width="30px"/></a></center></td>
                     <td><center><a href="music_removesong.php?id=<?php echo $row["idsongs"];?>"><img src="img/delete.png" width="30px"/></a></center></td>
                   </tr>
