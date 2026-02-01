@@ -104,7 +104,7 @@ And one for the songs:
 CREATE TABLE `songs` (
   `idsongs` varchar(45) NOT NULL,
   `name` varchar(45) DEFAULT NULL,
-'random' int(11) DEFAULT NULL,
+  `random` int(11) DEFAULT NULL,
   PRIMARY KEY (`idsongs`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
