@@ -56,7 +56,7 @@ sudo apt install apache2 php mariadb-server php-mysql git -y
 ```
 If you also want phpMyAdmin:
 ```
-sudo apt install apache2 php mariadb-server php-mysql git -y
+sudo apt install phpmyadmin -y
 ```
 Change ownership of webserver files:
 ```
