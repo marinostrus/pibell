@@ -161,6 +161,8 @@ Check the path at this entry:
 
 <img width="366" height="169" alt="image" src="https://github.com/user-attachments/assets/7721295b-d4af-491c-8912-898728211655" />
 
+## Some more dependancies
+<img width="550" height="352" alt="image" src="https://github.com/user-attachments/assets/3b46d9c5-4dfd-432f-933e-0b13c18b8e79" />
 
 
 Reboot after this!
