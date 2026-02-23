@@ -106,6 +106,18 @@ CREATE TABLE `songs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ```
+And one for the settings:
+```
+CREATE TABLE `settings` (
+  `idsettings` varchar(45) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `setting` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idsettings`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+```
+
+
 Create a database user. Make sure you change the password!
 ```
 CREATE USER 'schoolbell'@'localhost' IDENTIFIED BY 'password';
