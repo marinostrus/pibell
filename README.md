@@ -143,6 +143,7 @@ sudo reboot
 git clone https://github.com/marinostrus/pibell.git
 ```
 ## Create folders
+<img width="288" height="112" alt="image" src="https://github.com/user-attachments/assets/d065a3f3-835a-4f13-ba18-b30fda25325a" />
 
 
 ## Adjust php.ini for file upload
