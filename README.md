@@ -142,6 +142,8 @@ sudo reboot
 ```
 git clone https://github.com/marinostrus/pibell.git
 ```
+## Create folders
+
 
 ## Adjust php.ini for file upload
 
