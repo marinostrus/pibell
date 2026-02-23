@@ -166,3 +166,4 @@ Check the path at this entry:
 
 
 Reboot after this!
+<img width="556" height="271" alt="image" src="https://github.com/user-attachments/assets/b52375d2-30f5-463d-aed1-b2a91e24d1d7" />
