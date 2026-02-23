@@ -58,7 +58,7 @@ If you also want phpMyAdmin:
 ```
 sudo apt install phpmyadmin -y
 ```
-Change ownership of webserver files:
+Change ownership of webserver files. Replace pi with your username.
 ```
 sudo chown -R pi:www-data /var/www/html/
 ```
