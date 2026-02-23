@@ -130,6 +130,13 @@ Refresh user permissions:
 ```
 FLUSH PRIVILEGES;
 ```
+Exit and reboot
+```
+exit
+```
+```
+sudo reboot
+```
 ## Clone files
 
 ```
