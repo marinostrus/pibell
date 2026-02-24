@@ -54,11 +54,7 @@ Install the necesarry software:
 ```
 sudo apt install apache2 php mariadb-server php-mysql git -y
 ```
-If you also want phpMyAdmin:
-```
-sudo apt install phpmyadmin -y
-```
-Change ownership of webserver files. Replace pi with your username.
+Change ownership of webserver files:
 ```
 sudo chown -R pi:www-data /var/www/html/
 ```
@@ -101,23 +97,10 @@ And one for the songs:
 CREATE TABLE `songs` (
   `idsongs` varchar(45) NOT NULL,
   `name` varchar(45) DEFAULT NULL,
-  `random` int(11) DEFAULT NULL,
   PRIMARY KEY (`idsongs`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ```
-And one for the settings:
-```
-CREATE TABLE `settings` (
-  `idsettings` varchar(45) NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  `setting` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idsettings`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-```
-
-
 Create a database user. Make sure you change the password!
 ```
 CREATE USER 'schoolbell'@'localhost' IDENTIFIED BY 'password';
@@ -130,21 +113,11 @@ Refresh user permissions:
 ```
 FLUSH PRIVILEGES;
 ```
-Exit and reboot
-```
-exit
-```
-```
-sudo reboot
-```
 ## Clone files
 
 ```
 git clone https://github.com/marinostrus/pibell.git
 ```
-## Create folders
-<img width="288" height="112" alt="image" src="https://github.com/user-attachments/assets/d065a3f3-835a-4f13-ba18-b30fda25325a" />
-
 
 ## Adjust php.ini for file upload
 
@@ -161,9 +134,6 @@ Check the path at this entry:
 
 <img width="366" height="169" alt="image" src="https://github.com/user-attachments/assets/7721295b-d4af-491c-8912-898728211655" />
 
-## Some more dependancies
-<img width="550" height="352" alt="image" src="https://github.com/user-attachments/assets/3b46d9c5-4dfd-432f-933e-0b13c18b8e79" />
 
 
 Reboot after this!
-<img width="556" height="271" alt="image" src="https://github.com/user-attachments/assets/b52375d2-30f5-463d-aed1-b2a91e24d1d7" />
