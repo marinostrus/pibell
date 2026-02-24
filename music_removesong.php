@@ -28,6 +28,7 @@ if($row_cnt>0){
 } else{
 	
 	exec('sudo rm /var/www/html/music/'.$id.'.mp3');		
+	exec('sudo rm /var/www/html/music/no-random/'.$id.'.mp3');
 	$sql = "DELETE FROM songs WHERE idsongs='$id'";
 	mysqli_query($conn, $sql);	
 	/* close connection */

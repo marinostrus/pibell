@@ -81,6 +81,7 @@ while($rowsong = mysqli_fetch_assoc($resultsong)) {
 						echo $nullh.$hour.":".$nullm.$minutes;
 					?></td>
                   </tr>
+				  <?php  ?>
                   <tr>
                     <td><?php echo $lang_newplaytime;?></td>
                     <td>
@@ -127,10 +128,11 @@ while($rowsong = mysqli_fetch_assoc($resultsong)) {
 								<option value="5" <?php if($playtime==5){echo " selected";} ?>><?php echo $lang_5m;?></option>
 							</select> 
 						</td>
-					</tr>
+					</tr><?php  ?>
                 </tbody>
               </table>
-			<p><input type="submit" value="<?php echo $lang_save;?>" name="submit"></form><form action="schedule_delete.php?id=<?php echo $id; ?>" method="post"><input type="submit" value="<?php echo $lang_remove;?>" name="submit"></form></p>
+			<p>  <input type="submit" value="<?php echo $lang_save;?>" name="submit"></form>  
+			<form action="schedule_delete.php?id=<?php echo $id; ?>" method="post"><input type="submit" value="<?php echo $lang_remove;?>" name="submit"></form></p>
 			 
             </div>
           </div>

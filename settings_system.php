@@ -147,21 +147,13 @@
 						<a href="settings_system_availableupdates.php"><?php echo $lang_availableupdates;?></a>
 					</p>
 					<p>
-						<a href="settings_system_ssh.php" class="btn btn-secondary btn-icon-split">
-							<span class="icon text-white-50">
-							  <i class="fas fa-arrow-right"></i>
-							</span>
-							<span class="text"><?php echo $lang_enablessh;?></span>
-						</a>
-					<p>
-					<p>
 						<a href="settings_system_makefolders.php" class="btn btn-secondary btn-icon-split">
 							<span class="icon text-white-50">
 							  <i class="fas fa-arrow-right"></i>
 							</span>
 							<span class="text"><?php echo $lang_createfolders;?></span>
 						</a>
-					<p>						
+					</p>						
 					<p>
 						<a href="settings_system_makefolderswriteable.php" class="btn btn-secondary btn-icon-split">
 							<span class="icon text-white-50">
@@ -169,7 +161,7 @@
 							</span>
 							<span class="text"><?php echo $lang_makefolderswriteable;?></span>
 						</a>
-					<p>				
+					</p>				
                 </div>
               </div>		
           </div>

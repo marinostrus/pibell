@@ -24,8 +24,24 @@ while($rowschedule = mysqli_fetch_assoc($resultschedule)) {
 	if($song=="*"){
 		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
 	} else {
-		//$script = "/usr/bin/mpg123 -q /var/www/html/music/".$song.".mp3";
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+
+
+		$sqlrandom = "SELECT random FROM songs WHERE idsongs='$song'";
+		echo $sqlrandom;
+		$resultrandom = mysqli_query($conn, $sqlrandom);
+		while($rowrandom = mysqli_fetch_assoc($resultrandom)){$random=$rowrandom["random"];}
+		//echo $random.$sqlrandom;
+
+		// RANDOM SONG
+		if($song=="*"){
+			$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		} else {
+			if($random==1){$script = "/usr/bin/mpg123 -q /var/www/html/music/".$song.".mp3";}
+			if($random==0){$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$song.".mp3";}	
+		}	
+
+
+
 	}	
 	// SET CRONJOB
 	$output = exec("sudo sh /var/www/html/scripts/cronjob.sh $day $hour $minutes '$script'");

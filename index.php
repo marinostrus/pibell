@@ -25,7 +25,6 @@
 					$resultmaandag = mysqli_query($conn, $sqlmaandag);
 
 					if (mysqli_num_rows($resultmaandag) > 0) {
-						// output data of each row
 						while($rowmaandag = mysqli_fetch_assoc($resultmaandag)) {
 							$idsongmaandag = $rowmaandag["song"];
 							$idschedulemaandag = $rowmaandag["idschedule"];
@@ -36,7 +35,6 @@
 							$resultsongmaandag = mysqli_query($conn, $sqlsongmaandag);
 
 							if (mysqli_num_rows($resultsongmaandag) > 0) {
-								// output data of each row
 								while($rowsongmaandag = mysqli_fetch_assoc($resultsongmaandag)) {
 									$namemaandag = $rowsongmaandag["name"];
 							}}	
@@ -63,7 +61,6 @@
 					$resultdinsdag = mysqli_query($conn, $sqldinsdag);
 
 					if (mysqli_num_rows($resultdinsdag) > 0) {
-						// output data of each row
 						while($rowdinsdag = mysqli_fetch_assoc($resultdinsdag)) {
 							$idsongdinsdag = $rowdinsdag["song"];
 							$idscheduledinsdag = $rowdinsdag["idschedule"];
@@ -74,7 +71,6 @@
 							$resultsongdinsdag = mysqli_query($conn, $sqlsongdinsdag);
 
 							if (mysqli_num_rows($resultsongdinsdag) > 0) {
-								// output data of each row
 								while($rowsongdinsdag = mysqli_fetch_assoc($resultsongdinsdag)) {
 									$namedinsdag = $rowsongdinsdag["name"];
 							}}
@@ -208,7 +204,7 @@
 
 <?php  ?>
              <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                     <h3><?php echo $lang_saturday;?></h3>
 					<?php
@@ -246,7 +242,7 @@
             </div>
 
               <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card border-left-info shadow h-100 py-2">
                 <div class="card-body">
                     <h3><?php echo $lang_sunday;?></h3>
 					<?php
