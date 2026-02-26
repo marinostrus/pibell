@@ -21,7 +21,8 @@ if(isset($error)){
         <div class="container-fluid">
 
           <!-- Page Heading -->
-           <br/><br/>
+           <br/>
+		   <?php echo $error; ?><?php if($error==""){echo "<br/>";};?>
 
           <!-- Content Row -->
           <div class="row">
@@ -46,8 +47,7 @@ if(isset($error)){
 				<a href="music_killmpg123.php" class="btn btn-primary btn-icon-split">
 					<span class="text"><?php echo $lang_stopmusic;?></span>
 				</a>
-			</p>
-			<?php echo $error; ?>	
+			</p>				
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
@@ -112,7 +112,6 @@ if(isset($error)){
 				?>
 
 			</p>
-			<?php echo $error; ?>	
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
