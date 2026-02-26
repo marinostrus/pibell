@@ -35,10 +35,9 @@ if($_POST["monday"]==1){
 	
 	// RANDOM SONG
 	if($song=="*"){
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/*";
 	} else {
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/".$_POST["song"].".mp3";
-		//$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$_POST["song"].".mp3";
 	}
 
 	// SET CRONJOBS
@@ -61,10 +60,9 @@ if($_POST["tuesday"]==2){
 	
 	// RANDOM SONG
 	if($song=="*"){
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/*";
 	} else {
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/".$_POST["song"].".mp3";
-		//$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$_POST["song"].".mp3";
 	}
 
 	// SET CRONJOBS
@@ -87,10 +85,9 @@ if($_POST["wednesday"]==3){
 	
 	// RANDOM SONG
 	if($song=="*"){
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/*";
 	} else {
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/".$_POST["song"].".mp3";
-		//$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$_POST["song"].".mp3";
 	}
 
 	// SET CRONJOBS
@@ -113,10 +110,9 @@ if($_POST["thursday"]==4){
 	
 	// RANDOM SONG
 	if($song=="*"){
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/*";
 	} else {
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/".$_POST["song"].".mp3";
-		//$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$_POST["song"].".mp3";
 	}
 
 	// SET CRONJOBS
@@ -139,10 +135,9 @@ if($_POST["friday"]==5){
 	
 	// RANDOM SONG
 	if($song=="*"){
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/*";
 	} else {
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/".$_POST["song"].".mp3";
-		//$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$_POST["song"].".mp3";
 	}
 
 	// SET CRONJOBS
@@ -165,10 +160,9 @@ if($_POST["saturday"]==6){
 	
 	// RANDOM SONG
 	if($song=="*"){
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/*";
 	} else {
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/".$_POST["song"].".mp3";
-		//$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$_POST["song"].".mp3";
 	}
 
 	// SET CRONJOBS
