@@ -191,10 +191,9 @@ if($_POST["sunday"]==7){
 	
 	// RANDOM SONG
 	if($song=="*"){
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/*";
 	} else {
-		$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/".$_POST["song"].".mp3";
-		//$script = "/usr/bin/mpg123 -z /var/www/html/music/no-random/*";
+		$script = "/usr/bin/mpg123 -q /var/www/html/music/no-random/".$_POST["song"].".mp3";
 	}
 
 	// SET CRONJOBS
